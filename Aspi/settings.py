@@ -150,10 +150,10 @@ DATABASES['default'] = dj_database_url.config()
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.path.join(BASE_DIR, 'db.postgresql'),
-        'USER': 'root',
-        'PASSWORD': '8285',
-        'HOST': '127.0.0.1',
+        'NAME': 'd74v1sonnr62lu',
+        'USER': 'ukkyqsxvwnfaip',
+        'PASSWORD': 'd2ec199c0a8feff520f66120eb5fbaf0869d9d9c0dc0b7f9043195e229fd5221',
+        'HOST': 'ec2-54-225-118-55.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
