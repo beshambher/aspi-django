@@ -145,4 +145,16 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = '/profile/'
 
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+DATABASES['default'] = dj_database_url.config()
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.path.join(BASE_DIR, 'db.postgresql'),
+        'USER': 'root',
+        'PASSWORD': '8285',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
+

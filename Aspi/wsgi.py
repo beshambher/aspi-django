@@ -10,7 +10,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django-google-login.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "aspi-django.settings")
 
 from dj_static import Cling
 application = Cling(get_wsgi_application())
