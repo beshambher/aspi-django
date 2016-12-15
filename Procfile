@@ -1,1 +1,1 @@
-web: gunicorn Aspi.wsgi --log-file -
+web: gunicorn django-google-login.wsgi --log-file -
