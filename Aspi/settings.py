@@ -25,7 +25,7 @@ SECRET_KEY = 'ofjp7v73%7ef+$pi$%v0g=2o-14jsw3vv#-1it8=4h3u1=!f-t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['django-google-login.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -123,6 +123,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 STATIC_URL = '/static/'
 
@@ -142,3 +143,6 @@ AUTHENTICATION_BACKENDS = (
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/profile/'
+
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
