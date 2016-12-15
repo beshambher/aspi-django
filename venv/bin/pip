@@ -1,4 +1,4 @@
-#!/opt/Django/aspi-django/venv/bin/python
+#!/opt/Django/Aspi/venv/bin/python
 
 # -*- coding: utf-8 -*-
 import re
