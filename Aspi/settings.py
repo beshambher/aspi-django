@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ofjp7v73%7ef+$pi$%v0g=2o-14jsw3vv#-1it8=4h3u1=!f-t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-google-login.herokuapp.com']
 
 
 # Application definition
