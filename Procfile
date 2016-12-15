@@ -1,1 +1,1 @@
-web: gunicorn aspi-django.wsgi --log-file -
+web: gunicorn aspi.wsgi --log-file -
