@@ -132,6 +132,8 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn")
 
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
